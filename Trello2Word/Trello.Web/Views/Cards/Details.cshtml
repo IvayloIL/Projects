@@ -1,0 +1,49 @@
+﻿@model Trello.Models.Card
+
+@{
+    ViewBag.Title = "GenerateBoardDoc";
+}
+
+
+
+<div>
+    <h4>Card</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastActivity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastActivity)
+        </dd>
+    </dl>
+    <div class="attachments">
+        <h3>Attachments</h3>
+        @foreach (var attachment in @Model.Attachments)
+        {
+            @Html.Partial("_AttachmentPartial", attachment)
+        }
+    </div>
+    <div>
+        <h3>Checklists</h3>
+        @foreach (var checklist in @Model.Checklists)
+        {
+            @Html.Partial("_ChecklistPartial", checklist)
+        }
+    </div>
+</div>
+

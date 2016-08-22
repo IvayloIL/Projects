@@ -1,0 +1,36 @@
+﻿@using Trello.Web.Helpers
+@model Trello.Models.Checklist
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+    <div class="items">
+
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-success" style="@Html.CheckListProgress(@Model.Items)"></div>
+        </div>
+
+        @foreach (var item in @Model.Items)
+        {
+            
+            if (@item.State == "complete")
+            {
+                <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> @item.Name
+            }
+            else
+            {
+                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> @item.Name
+            }
+            <br/>
+
+        }
+    </div>
+</div>

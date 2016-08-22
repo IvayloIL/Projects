@@ -1,0 +1,15 @@
+﻿
+<img src="https://d13yacurqjgara.cloudfront.net/users/12755/screenshots/1037374/hex-loader2.gif" alt="" id="loadingImage" style="display: block; margin-left: auto; margin-right: auto"/>
+
+@section Scripts{
+    <script>
+        var url = window.location.hash;
+        var hash = url.substring(url.indexOf('#') + 7);
+        var urlToRedirect = "@Url.Action("ReceiveToken", "Boards", null, Url.RequestContext.HttpContext.Request.Url.Scheme)"+"?token=";
+        
+        if (hash != null || hash !== '') {
+            $('#loadingImage').hide;
+            window.location.replace(urlToRedirect + hash);
+        }
+    </script>
+}

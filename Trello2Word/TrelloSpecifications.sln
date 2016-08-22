@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trello.Models", "Trello.Models\Trello.Models.csproj", "{4BDF4837-2600-433D-9C6D-E4C718B40437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trello.Utils", "Trello.Utils\Trello.Utils.csproj", "{1DE794DF-834E-472B-B593-306CE4121B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trello.Web", "Trello.Web\Trello.Web.csproj", "{064B91E1-BCC4-4225-BD47-71723CDF4854}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Prod|Any CPU = Prod|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BDF4837-2600-433D-9C6D-E4C718B40437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDF4837-2600-433D-9C6D-E4C718B40437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDF4837-2600-433D-9C6D-E4C718B40437}.Prod|Any CPU.ActiveCfg = Prod|Any CPU
+		{4BDF4837-2600-433D-9C6D-E4C718B40437}.Prod|Any CPU.Build.0 = Prod|Any CPU
+		{4BDF4837-2600-433D-9C6D-E4C718B40437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDF4837-2600-433D-9C6D-E4C718B40437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE794DF-834E-472B-B593-306CE4121B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE794DF-834E-472B-B593-306CE4121B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE794DF-834E-472B-B593-306CE4121B3F}.Prod|Any CPU.ActiveCfg = Prod|Any CPU
+		{1DE794DF-834E-472B-B593-306CE4121B3F}.Prod|Any CPU.Build.0 = Prod|Any CPU
+		{1DE794DF-834E-472B-B593-306CE4121B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE794DF-834E-472B-B593-306CE4121B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Prod|Any CPU.ActiveCfg = Prod|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Prod|Any CPU.Build.0 = Prod|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Prod|Any CPU.Deploy.0 = Prod|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064B91E1-BCC4-4225-BD47-71723CDF4854}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

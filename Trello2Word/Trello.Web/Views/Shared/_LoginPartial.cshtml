@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNet.Identity
+@if (this.Session["UserId"] != null)
+{
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @*            @Html.ActionLink("Hello " + this.Session["Username"] + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+            <div><p style="color: #fff; margin-top: 19px">Hello @this.Session["Username"]</p></div>
+        </li>
+        @*        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>*@
+        <li>
+            @Html.ActionLink("Log out", "LogOff", "Account", null, new { id = "logofflink" })
+        </li>
+    </ul>
+
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+@*        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+        <li>@Html.ActionLink("Log in", "AuthorizeToken", "Boards", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
